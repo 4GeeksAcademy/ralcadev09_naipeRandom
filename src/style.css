@@ -3,3 +3,42 @@
 body{
     background: white;
 }
+.card-custom {
+    width: 10rem;
+    height: 15rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-size: 1.5rem;
+  }
+  .heart, .diamond {
+    color: red;
+  }
+  .spade, .club {
+    color: black;
+  }
+  .top-left, .bottom-right {
+    position: absolute;
+    font-size: 1rem;
+  }
+  .top-left {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .bottom-right {
+    bottom: 0.5rem;
+    right: 0.5rem;
+    transform: rotate(180deg);
+  }
+  .center {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
