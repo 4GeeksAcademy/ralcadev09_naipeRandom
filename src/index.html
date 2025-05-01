@@ -12,13 +12,28 @@
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 </head>
 
-<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+<body class="bg-success d-flex justify-content-center align-items-center vh-100 flex-column">
 
-  <div id="card" class="card-custom text-center position-relative">
+  <div id="card" class="card-custom text-center m-3">
     <div class="suit top-left"></div>
     <div class="center" id="number"></div>
     <div class="suit bottom-right"></div>
   </div>
+
+  <button onclick="generateCard()" class="btn btn-primary" type="button"
+  style="width: 10rem;">Click nueva carta</button>
+
+  <div
+    class="m-3 gap-4 d-flex justify-content-center align-items-center text-center row bg-secondary"
+    style="width: 10rem;"
+    >
+    <label>Ancho (px):</label>
+    <input type="text" id="widthInput" placeholder="ej: 200px">
+    <label>Alto (px):</label>
+    <input type="text" id="heightInput" placeholder="ej: 300px">
+    <button onclick="applySize()" class="btn btn-light mt-2">Aplicar Tamaño</button>
+  </div>
+
 
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
